@@ -11,6 +11,23 @@ Executive-level KPI dashboard tracking **100 e-commerce sellers**, detecting **3
 - **60%** High Risk
 - **43.09%** Avg Approval Rate
 - **53.53 hrs** Avg Decision Time
+- ## Tech Stack
+- Python (Pandas, Data Cleaning)
+- Tableau Public (KPI Dashboard, Risk Visualization)
+
+## Files in this Repo
+- `trust_safety_dashboard_cleaned.csv` - Cleaned dataset (100 sellers, 349 ghost accounts)
+- `dashboard_cleaning_code.py` - Python script for data cleaning
+- `trust_safety_dashboard.png` - Final Tableau dashboard
+- `trust_safety_dashboard_raw.xlsx` - Raw data
+
+## Live Dashboard
+Tableau Public Link: [Paste your Tableau Public link here when ready]
+
+## Key Insights
+- 60% High Risk sellers need immediate review
+- 43.09% Avg Approval Rate indicates strict policy
+- Reduces manual review time from 4 hours to 30 minutes
 
 ## Dashboard Components
 
