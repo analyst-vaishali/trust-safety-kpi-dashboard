@@ -69,3 +69,5 @@ Python, Tableau Public, Data Cleaning, Trust & Safety
 - **BookNest = 82** - Highest risk
 - **60% High Risk** - Need automated banning
 - **Reduces review time** from 4 hours to 30 mins
+---
+Author: Vaishali Desai | Business Analyst | MBA Business Analytics - Gannon University, USA | Trust & Safety Operations
