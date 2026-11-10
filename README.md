@@ -54,20 +54,32 @@ Tableau Public Link: [Paste your Tableau Public link here when ready]
 
 ## How I Built It
 
-### Step 1: Data Cleaning
-Raw data had messy values like Seller_001, HomeEssentials, 11.6 percent, N/A
+### Step 1: Data Cleaning (Python + Pandas)
+Raw data had messy values like Seller_001, HomeEssentials, 11.6 percent, N/A.
 
-### Step 2: Tableau Dashboard
-- **Data:** 100 rows cleaned
-- **Charts:** Risk Treemap 60%/21%/19%, Ghost Bar 82/62/62/61/43/39, Scatter, KPI Cards
+- Cleaned 100 seller records with Python (Pandas)
+- Removed duplicates and blank rows
+- Replaced N/A values and standardized % values
+- Fixed seller names and category names for consistent grouping
+- Calculated total ghost accounts per seller (349 total)
 
-## Skills
-Python, Tableau Public, Data Cleaning, Trust & Safety
+Result: Clean dataset with 100 rows, ready for analysis.
 
-## Results
-- **349 ghost accounts** detected
-- **BookNest = 82** - Highest risk
-- **60% High Risk** - Need automated banning
-- **Reduces review time** from 4 hours to 30 mins
----
+### Step 2: Risk Scoring + Tableau Dashboard
+- Calculated risk score per seller based on ghost accounts, approval rate, and fake review ratio
+- Categorized sellers into High / Medium / Low Risk — 60% High Risk, 21% Medium Risk, 19% Low Risk
+- Built dashboard in Tableau Public with filters by Risk Category and Seller
+
+**Charts:**
+- Risk Treemap — 60% / 21% / 19%
+- Ghost Accounts Bar — BookNest 82, Top 6 sellers 82 / 62 / 62 / 61 / 43 / 39
+- Scatter Plot — Fake Review Ratio vs Approval Rate, sized by Ghost Accounts, colored by Risk Category
+- KPI Cards — Total Sellers, Total Ghost Accounts, High Risk %, Avg Approval Rate
+- Trend Lines — Linear trend per Risk Category
+
+### Results
+- 349 ghost accounts detected
+- BookNest = 82 — Highest risk
+- 60% High Risk — Need automated banning
+- Reduces review time from 4 hours to 30 mins
 Author: Vaishali Desai | Business Analyst | MBA Business Analytics - Gannon University, USA | Trust & Safety Operations
